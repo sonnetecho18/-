@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f3efe5" />
+  <meta name="description" content="沿着余秋雨的人生线索，读作品，也读山河。以地图、作品地点与人物关系构成的文化阅读导览。" />
+  <title>余秋雨：行者无疆 · 沿着足迹读作品</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: '#183D32', forest: '#28584A', sage: '#78917C',
+            warm: '#F3EFE5', paper: '#FBF9F3', mist: '#E9E9DF',
+            text: '#26352E', muted: '#657168', border: '#DEDCCF',
+            gold: '#BB9360', coral: '#DB7954'
+          },
+          fontFamily: {
+            serif: ['Noto Serif SC', 'Songti SC', 'SimSun', 'serif'],
+            sans: ['Microsoft YaHei', 'PingFang SC', 'Arial', 'sans-serif']
+          },
+          maxWidth: { content: '1180px' }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="bg-paper text-text antialiased">
+  <a class="skip-link" href="#main">跳到主要内容</a>
+  <header class="site-header" id="top">
+    <div class="nav-wrap">
+      <a class="brand" href="#top" aria-label="行者无疆首页">
+        <span class="brand-seal" aria-hidden="true">行</span>
+        <span class="brand-copy"><strong>行者无疆</strong><small>余秋雨 · 文化阅读导览</small></span>
+      </a>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="展开导航">
+        <span></span><span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="主导航">
+        <a href="#journey" class="nav-link active">人生地图 <i>01</i></a>
+        <a href="#works" class="nav-link">作品打卡 <i>02</i></a>
+        <a href="#people" class="nav-link">人物关系 <i>03</i></a>
+        <a href="#about" class="nav-about">关于本页 <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero-section" aria-labelledby="hero-title">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-mark"></span> 一场沿着文字展开的行旅</div>
+          <h1 id="hero-title"><span class="hero-line">沿着他的足迹，</span><br /><em>读作品，也读人生。</em></h1>
+          <p class="hero-intro">从一处山河出发，走进余秋雨的生命线索、作品现场与文化交往。这里不是一份静止的年表，而是一张可以慢慢展开的阅读地图。</p>
+          <div class="hero-actions">
+            <a href="#journey" class="button button-primary">从人生地图开始 <span aria-hidden="true">↗</span></a>
+            <a href="#works" class="text-link">先看作品线索 <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="hero-note"><span class="note-dot"></span> 内容以公开资料与作品线索为基础 · 未核实之处会明确标注</div>
+        </div>
+        <div class="hero-art" aria-label="行旅地图主题插画，非精确地图">
+          <div class="art-index">READING<br />JOURNEY <span>01 / 03</span></div>
+          <svg class="hero-orbit" viewBox="0 0 620 520" role="img" aria-label="环绕山河与书页的抽象行旅轨迹">
+            <defs>
+              <linearGradient id="orbitStroke" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#BB9360" stop-opacity=".2"/><stop offset=".55" stop-color="#BB9360"/><stop offset="1" stop-color="#DB7954" stop-opacity=".35"/></linearGradient>
+              <linearGradient id="bookFill" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#28584A"/><stop offset="1" stop-color="#183D32"/></linearGradient>
+              <pattern id="coverLines" width="18" height="18" patternUnits="userSpaceOnUse"><path d="M0 18 18 0" stroke="#D9C29E" stroke-opacity=".15" stroke-width="1"/></pattern>
+            </defs>
+            <circle cx="326" cy="254" r="213" fill="none" stroke="#78917C" stroke-opacity=".16" stroke-width="1"/>
+            <circle cx="326" cy="254" r="177" fill="none" stroke="#78917C" stroke-opacity=".2" stroke-width="1" stroke-dasharray="1 8"/>
+            <path d="M89 322C117 168 206 83 325 83c104 0 193 82 212 174 13 63-17 133-73 163-59 31-116 6-147-37-31-44-27-96 7-123 30-25 73-16 92 13" fill="none" stroke="url(#orbitStroke)" stroke-width="2" stroke-dasharray="4 8"/>
+            <path d="M134 301c43-61 69-99 119-107 24-4 47 3 68 17 24-24 49-40 77-37 28 3 48 26 67 50" fill="none" stroke="#78917C" stroke-opacity=".42" stroke-width="1.5"/>
+            <path d="m148 310 83-87 43 39 41-62 67 53 52-37 65 80-36 18-55-53-56 42-50-34-43 37-50-30-43 44z" fill="#78917C" fill-opacity=".18"/>
+            <path d="m267 231 49-40 44 52 34-29 52 48-4 5-50-39-34 29-43-52-47 38z" fill="#28584A" fill-opacity=".57"/>
+            <g transform="translate(214 175) rotate(-7 112 137)">
+              <path d="M9 21c40-19 72-19 105-4v222c-37-16-71-15-105 4z" fill="#EDE4D0" stroke="#D8CBB2"/>
+              <path d="M114 17c34-15 68-14 105 4v222c-33-19-68-20-105-4z" fill="url(#bookFill)"/>
+              <path d="M114 17c34-15 68-14 105 4v222c-33-19-68-20-105-4z" fill="url(#coverLines)"/>
+              <path d="M114 17v222" stroke="#D6C8AE" stroke-width="2"/>
+              <path d="M136 63h56M136 73h43" stroke="#E6D6B8" stroke-opacity=".65" stroke-width="1"/>
+              <text x="137" y="108" fill="#F3EFE5" font-family="serif" font-size="22" letter-spacing="5">行者</text>
+              <text x="137" y="137" fill="#F3EFE5" font-family="serif" font-size="22" letter-spacing="5">无疆</text>
+              <path d="M137 164h54" stroke="#BB9360" stroke-width="1"/>
+              <text x="137" y="184" fill="#E8D9BE" font-family="sans-serif" font-size="8" letter-spacing="2">YU QIUYU</text>
+              <path d="M21 51h63M21 60h73M21 69h54M21 190h76" stroke="#B3AC9A" stroke-opacity=".5" stroke-width="2"/>
+            </g>
+            <circle cx="107" cy="320" r="8" fill="#DB7954" stroke="#FBF9F3" stroke-width="4"/>
+            <circle cx="501" cy="238" r="5" fill="#BB9360" stroke="#FBF9F3" stroke-width="3"/>
+            <circle cx="431" cy="412" r="5" fill="#78917C" stroke="#FBF9F3" stroke-width="3"/>
+            <text x="65" y="351" fill="#657168" font-size="11" letter-spacing="2">出发 · 故乡</text>
+            <text x="448" y="217" fill="#657168" font-size="11" letter-spacing="2">作品现场</text>
+            <path d="M487 84v27m-13-13h26" stroke="#BB9360" stroke-width="1"/>
+          </svg>
+          <div class="art-caption"><span>山河，是文字的另一种注脚</span><small>一张阅读地图 · 持续校订中</small></div>
+          <div class="art-stamp">行<br />旅</div>
+        </div>
+      </div>
+      <div class="hero-baseline"><span>一位行者的三种阅读方式</span><span class="baseline-line"></span><span>MAP · WORKS · PEOPLE</span></div>
+    </section>
+
+    <section class="journey-section section-pad" id="journey" aria-labelledby="journey-title">
+      <div class="section-shell">
+        <div class="section-heading">
+          <div class="section-kicker"><span>01</span> LIFE & LANDSCAPE</div>
+          <div class="heading-row">
+            <div><h2 id="journey-title">人生地图<span class="heading-period">。</span></h2><p class="section-lede">从故乡与求学线索，到作品中被重新照亮的文化现场。</p></div>
+            <p class="heading-aside">地点与作品相互照见。<br />路线仅作文化线索示意。</p>
+          </div>
+        </div>
+
+        <div class="map-layout">
+          <div class="map-panel">
+            <div class="map-topline"><div><span class="panel-label">FIELD NOTES</span><strong>行旅线索图</strong></div><span class="map-scale">示意 · 非比例地图</span></div>
+            <div class="map-canvas">
+              <div class="map-grid" aria-hidden="true"></div>
+              <svg class="map-graphic" viewBox="0 0 760 440" role="img" aria-labelledby="map-title map-desc">
+                <title id="map-title">余秋雨人生与作品地点示意图</title>
+                <desc id="map-desc">地图以抽象区域与虚线行旅线段连接可查地点节点；路线是阅读示意，不代表比例距离或完整行程。节点均可点击查看资料状态。</desc>
+                <defs>
+                  <pattern id="mapDots" width="14" height="14" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".8" fill="#78917C" opacity=".2"/></pattern>
+                  <linearGradient id="landTone" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#D8DDCD"/><stop offset="1" stop-color="#E8E5D7"/></linearGradient>
+                  <marker id="routeArrow" markerWidth="7" markerHeight="7" refX="5.5" refY="3.5" orient="auto" markerUnits="strokeWidth"><path d="M0 0 7 3.5 0 7z" fill="#BB9360"/></marker>
+                </defs>
+                <path d="M181 72 239 47l61 17 48-21 51 30 47-4 33 29 60 9 29 37 45 26-12 37-40 21-11 47-44 17-18 39-52 7-28 45-53-16-36 24-49-22-41 13-27-39-43-13-10-45-37-32 22-37-23-38 27-38-8-43 31-18z" fill="url(#landTone)" stroke="#9BA998" stroke-width="1.4"/>
+                <path d="M181 72 239 47l61 17 48-21 51 30 47-4 33 29 60 9 29 37 45 26-12 37-40 21-11 47-44 17-18 39-52 7-28 45-53-16-36 24-49-22-41 13-27-39-43-13-10-45-37-32 22-37-23-38 27-38-8-43 31-18z" fill="url(#mapDots)" opacity=".7"/>
+                <path class="route-segment route-yuyao" d="M230 145C285 157 345 184 404 204" marker-end="url(#routeArrow)"/>
+                <path class="route-segment route-overseas" d="M421 199C490 161 548 136 617 135" marker-end="url(#routeArrow)"/>
+                <path class="route-segment route-overseas" d="M627 151C650 176 665 209 672 246" marker-end="url(#routeArrow)"/>
+                <path class="route-context" d="M306 222C326 234 340 247 354 259"/>
+                <path d="M219 201c40 34 50 76 91 101m70-27 54 34m-17-131 50 8m59 54 26-38" fill="none" stroke="#A7B1A0" stroke-width="1"/>
+                <g class="map-node" tabindex="0" role="button" aria-label="查看余姚地点线索" data-place="yuyao" transform="translate(227 143)"><circle class="node-halo" r="19"/><circle class="node-dot" r="7"/><text x="15" y="4">余姚</text></g>
+                <g class="map-node" tabindex="0" role="button" aria-label="查看上海地点线索" data-place="shanghai" transform="translate(411 204)"><circle class="node-halo" r="16"/><circle class="node-dot" r="5.5"/><text x="14" y="4">上海</text></g>
+                <g class="map-node selected" tabindex="0" role="button" aria-label="查看莫高窟地点线索" data-place="mogao" transform="translate(291 215)"><circle class="node-halo" r="22"/><circle class="node-dot" r="8"/><text x="14" y="4">敦煌 · 莫高窟</text></g>
+                <g class="map-node" tabindex="0" role="button" aria-label="查看都江堰地点线索" data-place="dujiangyan" transform="translate(355 258)"><circle class="node-halo" r="14"/><circle class="node-dot" r="4.5"/><text x="13" y="4">都江堰</text></g>
+                <g class="map-node overseas" tabindex="0" role="button" aria-label="查看希腊地点线索" data-place="greece" transform="translate(622 135)"><circle class="node-halo" r="17"/><circle class="node-dot" r="5.5"/><text x="-3" y="-17">希腊</text></g>
+                <g class="map-node overseas" tabindex="0" role="button" aria-label="查看埃及地点线索" data-place="egypt" transform="translate(672 262)"><circle class="node-halo" r="17"/><circle class="node-dot" r="5.5"/><text x="10" y="4">埃及</text></g>
+                <text x="90" y="395" class="map-small-label">CHINA · CULTURAL ROUTES</text>
+                <text x="540" y="395" class="map-small-label">GREECE · EGYPT</text>
+              </svg>
+              <div class="map-compass" aria-hidden="true"><span>N</span><i></i><b></b><small>E</small></div>
+            </div>
+            <div class="map-legend"><span><i class="legend-dot major"></i>重要人生线索</span><span><i class="legend-dot secondary"></i>作品关联地点</span><span><i class="legend-dash"></i>行旅线索示意</span></div>
+          </div>
+
+          <aside class="place-card" aria-live="polite" aria-label="当前地点详情">
+            <div class="place-card-head"><span class="panel-label">PLACE NOTE / <span id="place-index">01</span></span><span class="status-pill" id="place-status">来源可查 · 关联待核</span></div>
+            <div class="place-card-content">
+              <div class="place-region" id="place-region">甘肃 · 敦煌</div>
+              <h3 id="place-name">莫高窟</h3>
+              <p id="place-description">敦煌的文化遗产现场，也是《文化苦旅》地点探索中的一处线索。页面将遗产信息与作品关联分开标注，避免把地点资料误作作品出处证明。</p>
+              <div class="place-rule"></div>
+              <div class="place-meta"><span>关联作品</span><strong id="place-work">《文化苦旅》· 关联待复核</strong></div>
+              <div class="place-meta"><span>资料状态</span><strong id="place-source">遗产信息可查；篇目对应待核</strong></div>
+              <button class="text-button" type="button" data-open-place="mogao">展开地点档案 <span aria-hidden="true">↗</span></button>
+            </div>
+            <div class="place-footnote"><span class="footnote-icon">i</span><span>地图路线根据公开生平与作品地点整理，非精确行程记录。</span></div>
+          </aside>
+        </div>
+
+        <div class="timeline-wrap">
+          <div class="timeline-intro"><span class="panel-label">TIME, BY HAND</span><strong>手动浏览年份</strong><p>拖动查看年份线索；无单年记录时会明确提示。</p></div>
+          <div class="timeline-control">
+            <div class="timeline-year"><span>当前年份</span><strong id="year-value">2000</strong></div>
+            <div class="range-wrap"><input id="year-range" type="range" min="1946" max="2026" value="2000" step="1" aria-label="选择年份" /><div class="range-labels"><span>1946</span><span>作品与行旅</span><span>2026</span></div><div class="timeline-milestones" aria-label="重要年份"><button type="button" data-year="1946"><i></i><span>1946 出生</span></button><button type="button" data-year="1968"><i></i><span>1968 求学</span></button><button type="button" data-year="2000"><i></i><span>2000 行旅</span></button></div></div>
+          </div>
+          <div class="timeline-message" id="timeline-message" aria-live="polite"><span class="timeline-marker"></span><span id="timeline-message-text">2000 年行旅线索：希腊、埃及。拖动年份，地图节点会同步亮起。</span></div>
+        </div>
+        <div class="text-fallback"><span>文字版地点索引</span><button data-open-place="yuyao">余姚</button><button data-open-place="shanghai">上海</button><button data-open-place="mogao">莫高窟</button><button data-open-place="dujiangyan">都江堰</button><button data-open-place="greece">希腊</button><button data-open-place="egypt">埃及</button></div>
+      </div>
+    </section>
+
+    <section class="works-section section-pad" id="works" aria-labelledby="works-title">
+      <div class="section-shell">
+        <div class="section-heading">
+          <div class="section-kicker"><span>02</span> BOOKS & CHECKPOINTS</div>
+          <div class="heading-row">
+            <div><h2 id="works-title">作品打卡<span class="heading-period">。</span></h2><p class="section-lede">以作品为入口，重新看见文字中的风景与文化现场。</p></div>
+            <p class="heading-aside">每一个地点，先回答：<br />它为什么出现在这里？</p>
+          </div>
+        </div>
+        <div class="filter-row" role="group" aria-label="筛选地点类型">
+          <span class="filter-label">探索线索</span>
+          <button class="filter-chip active" type="button" data-filter="all" aria-pressed="true">全部 <span>08</span></button>
+          <button class="filter-chip" type="button" data-filter="scenic" aria-pressed="false">人文与风景 <span>06</span></button>
+          <button class="filter-chip" type="button" data-filter="food" aria-pressed="false">沿途风味 <span>02</span></button>
+          <span class="filter-note">食物条目对应作品中的旅途记录，非店铺推荐</span>
+        </div>
+
+        <div class="works-grid" id="works-grid">
+          <article class="work-card" data-work="culture" aria-labelledby="work-culture-title">
+            <div class="work-cover cover-desert">
+              <div class="cover-top"><span>山河与文明</span><span>NO. 01</span></div>
+              <div class="cover-landscape" aria-hidden="true"><i></i><b></b><em></em></div>
+              <div class="cover-title"><span>YU QIUYU · ESSAYS</span><h3 id="work-culture-title">文化<br />苦旅</h3><small>在历史现场，重新阅读中国</small></div>
+              <span class="cover-seal">文<br />化</span>
+            </div>
+            <div class="work-card-body">
+              <div class="work-meta"><span>散文 · 文化行旅</span><span>地点线索 02</span></div>
+              <p class="work-summary">把脚步放进文明现场，在遗迹与文字之间寻找相互照亮的线索。</p>
+              <div class="place-list">
+                <button class="place-row" type="button" data-place="mogao" data-category="scenic"><span class="place-row-icon">景</span><span class="place-row-copy"><strong>莫高窟</strong><small>敦煌 · 关联待复核</small></span><span class="row-arrow">↗</span></button>
+                <button class="place-row" type="button" data-place="dujiangyan" data-category="scenic"><span class="place-row-icon">景</span><span class="place-row-copy"><strong>都江堰</strong><small>四川 · 出处待核实</small></span><span class="row-arrow">↗</span></button>
+              </div>
+              <div class="work-card-foot"><span>地点条目可继续探索</span><span class="foot-line"></span><span>01 / 04</span></div>
+            </div>
+          </article>
+
+          <article class="work-card" data-work="journey" aria-labelledby="work-journey-title">
+            <div class="work-cover cover-sea">
+              <div class="cover-top"><span>越过边界</span><span>NO. 02</span></div>
+              <div class="cover-sea-art" aria-hidden="true"><div class="sun"></div><div class="sea-line l1"></div><div class="sea-line l2"></div><div class="sea-line l3"></div><div class="boat"></div></div>
+              <div class="cover-title"><span>YU QIUYU · TRAVEL NOTES</span><h3 id="work-journey-title">行者<br />无疆</h3><small>在路上，遇见文明的回声</small></div>
+              <span class="cover-seal">行<br />者</span>
+            </div>
+            <div class="work-card-body">
+              <div class="work-meta"><span>行旅 · 文明观察</span><span>地点线索 02</span></div>
+              <p class="work-summary">从希腊、埃及等古文明现场展开阅读，以国家尺度呈现行旅线索。</p>
+              <div class="place-list">
+                <button class="place-row" type="button" data-place="greece" data-category="scenic"><span class="place-row-icon">国</span><span class="place-row-copy"><strong>希腊</strong><small>《千年一叹》· 奥林匹亚行旅线索</small></span><span class="row-arrow">↗</span></button>
+                <button class="place-row" type="button" data-place="egypt" data-category="scenic"><span class="place-row-icon">国</span><span class="place-row-copy"><strong>埃及</strong><small>古文明行旅 · 国家级地点线索</small></span><span class="row-arrow">↗</span></button>
+              </div>
+              <div class="work-card-foot"><span>地点条目可继续探索</span><span class="foot-line"></span><span>02 / 04</span></div>
+            </div>
+          </article>
+
+          <article class="work-card" data-work="notes" aria-labelledby="work-notes-title">
+            <div class="work-cover cover-ink">
+              <div class="cover-top"><span>山水与思辨</span><span>NO. 03</span></div>
+              <div class="cover-ink-art" aria-hidden="true"><svg viewBox="0 0 420 205"><path d="M0 154c48-25 70-64 115-58 43 6 59 48 95 39 29-7 39-51 72-50 40 1 64 51 138 42v78H0z" fill="#78917C" fill-opacity=".35"/><path d="M0 176c44-17 74-22 113-11 35 10 69 15 98-7 34-27 67-26 105-8 35 16 70 16 104-4v59H0z" fill="#E9E9DF" fill-opacity=".75"/><path d="M58 125c19-28 43-39 63-39m92 44c17-32 37-44 61-46m43 46 31-35" fill="none" stroke="#BB9360" stroke-width="2"/></svg></div>
+              <div class="cover-title"><span>YU QIUYU · ESSAYS</span><h3 id="work-notes-title">山居<br />笔记</h3><small>从山水之间，回望文化脉络</small></div>
+              <span class="cover-seal">山<br />居</span>
+            </div>
+            <div class="work-card-body">
+              <div class="work-meta"><span>散文 · 思想随笔</span><span>地点线索 02</span></div>
+              <p class="work-summary">由河姆渡遗址回望故乡，也从黄州篇章进入苏轼与文化困境的讨论。</p>
+              <div class="place-list">
+                <button class="place-row" type="button" data-place="hemudu" data-category="scenic"><span class="place-row-icon">景</span><span class="place-row-copy"><strong>河姆渡遗址</strong><small>《乡关何处》· 余姚文化遗址线索</small></span><span class="row-arrow">↗</span></button>
+                <button class="place-row" type="button" data-place="huangzhou" data-category="scenic"><span class="place-row-icon">景</span><span class="place-row-copy"><strong>黄州</strong><small>《苏东坡突围》· 篇目地点</small></span><span class="row-arrow">↗</span></button>
+              </div>
+              <div class="work-card-foot"><span>地点线索已补充</span><span class="foot-line"></span><span>03 / 04</span></div>
+            </div>
+          </article>
+
+          <article class="work-card" data-work="thousand" aria-labelledby="work-thousand-title">
+            <div class="work-cover cover-century">
+              <div class="cover-top"><span>文明现场</span><span>NO. 04</span></div>
+              <div class="cover-century-art" aria-hidden="true"><i></i><b></b><em></em></div>
+              <div class="cover-title"><span>YU QIUYU · JOURNEY</span><h3 id="work-thousand-title">千年<br />一叹</h3><small>在古文明之间行走与记录</small></div>
+              <span class="cover-seal">千<br />年</span>
+            </div>
+            <div class="work-card-body">
+              <div class="work-meta"><span>行旅 · 文明观察</span><span>食物线索 02</span></div>
+              <p class="work-summary">将书中的食物书写作为旅行现场的阅读线索；注明篇目与核验状态，不扩写成餐饮攻略。</p>
+              <div class="place-list">
+                <button class="place-row" type="button" data-place="iran-radish" data-category="food"><span class="place-row-icon">食</span><span class="place-row-copy"><strong>伊朗黑萝卜</strong><small>《千年一叹》自序 · 旅途食材记录</small></span><span class="row-arrow">↗</span></button>
+                <button class="place-row" type="button" data-place="tigris-fish" data-category="food"><span class="place-row-icon">食</span><span class="place-row-copy"><strong>底格里斯河畔烤鱼</strong><small>《千年一叹》· 河畔烤鱼篇</small></span><span class="row-arrow">↗</span></button>
+              </div>
+              <div class="work-card-foot"><span>原文线索 · 待正版复核</span><span class="foot-line"></span><span>04 / 04</span></div>
+            </div>
+          </article>
+        </div>
+        <div class="empty-filter" id="empty-filter" hidden>
+          <span class="empty-mark">食</span><div><strong>当前筛选没有匹配条目</strong><p>切换类别即可继续查看作品中的地点线索。</p></div>
+          <button type="button" class="text-button" data-reset-filter>查看全部线索 <span aria-hidden="true">↗</span></button>
+        </div>
+        <p class="content-caveat"><span>内容校订说明</span> 页面卡片用于呈现产品结构；未完成来源核实的作品地点已标注“待核实”，不作为确定结论。</p>
+      </div>
+    </section>
+
+    <section class="people-section section-pad" id="people" aria-labelledby="people-title">
+      <div class="section-shell">
+        <div class="section-heading">
+          <div class="section-kicker"><span>03</span> PEOPLE & CONTEXT</div>
+          <div class="heading-row">
+            <div><h2 id="people-title">人物关系<span class="heading-period">。</span></h2><p class="section-lede">从公开交往与文化语境出发，让人物关系成为理解作品的另一条线索。</p></div>
+            <p class="heading-aside">人物支点逐条附上公开来源。<br />点选姓名，查看关系说明。</p>
+          </div>
+        </div>
+        <div class="people-board">
+          <div class="people-graph-wrap">
+            <div class="people-graph-top"><span class="panel-label">CONNECTIONS, IN CONTEXT</span><span>关系分类示意 · 非完整名录</span></div>
+            <svg class="people-graph" viewBox="0 0 680 455" role="img" aria-labelledby="network-title network-desc">
+              <title id="network-title">余秋雨人物关系分类示意图</title><desc id="network-desc">中心人物连接文学艺术交往、师友与学术背景、家庭与人生三类关系，并列出黄佐临、谢晋、王元化、张可、马兰等公开资料中的人物支点。</desc>
+              <defs><radialGradient id="centerGlow"><stop stop-color="#D8DDCD" stop-opacity=".95"/><stop offset="1" stop-color="#D8DDCD" stop-opacity="0"/></radialGradient></defs>
+              <circle cx="337" cy="225" r="173" fill="url(#centerGlow)"/>
+              <ellipse cx="337" cy="225" rx="246" ry="151" fill="none" stroke="#B7C0B2" stroke-dasharray="2 8"/>
+              <ellipse cx="337" cy="225" rx="174" ry="104" fill="none" stroke="#C8CDBF" stroke-dasharray="2 7"/>
+              <path d="M337 225 112 143M337 225 568 143M337 225 221 382" stroke="#9BA998" stroke-opacity=".64" stroke-width="1.4" stroke-dasharray="4 6"/>
+              <path d="M112 143 187 83M112 143 187 198M568 143 487 83M568 143 487 198M221 382 320 382" fill="none" stroke="#BB9360" stroke-opacity=".52" stroke-width="1.2"/>
+              <g class="relation-node category-node active" tabindex="0" role="button" data-relation="literary" aria-label="查看文学艺术交往分类" transform="translate(112 143)"><circle class="relation-halo" r="42"/><circle class="relation-dot" r="29"/><text text-anchor="middle" y="-1">文学艺术</text><text text-anchor="middle" y="15" class="sub">交往</text></g>
+              <g class="relation-node category-node" tabindex="0" role="button" data-relation="academic" aria-label="查看师友与学术背景分类" transform="translate(568 143)"><circle class="relation-halo" r="42"/><circle class="relation-dot" r="29"/><text text-anchor="middle" y="-1">师友与</text><text text-anchor="middle" y="15" class="sub">学术背景</text></g>
+              <g class="relation-node category-node" tabindex="0" role="button" data-relation="life" aria-label="查看家庭与人生分类" transform="translate(221 382)"><circle class="relation-halo" r="39"/><circle class="relation-dot" r="26"/><text text-anchor="middle" y="-1">家庭与</text><text text-anchor="middle" y="15" class="sub">人生</text></g>
+              <g class="person-node" tabindex="0" role="button" data-person="huangzuolin" data-relation="literary" aria-label="查看黄佐临关系说明" transform="translate(187 77)"><circle class="person-halo" r="21"/><circle class="person-dot" r="14"/><text text-anchor="middle" y="35">黄佐临</text></g>
+              <g class="person-node" tabindex="0" role="button" data-person="xiejin" data-relation="literary" aria-label="查看谢晋关系说明" transform="translate(187 202)"><circle class="person-halo" r="21"/><circle class="person-dot" r="14"/><text text-anchor="middle" y="35">谢晋</text></g>
+              <g class="person-node" tabindex="0" role="button" data-person="wangyuanhua" data-relation="academic" aria-label="查看王元化关系说明" transform="translate(487 77)"><circle class="person-halo" r="21"/><circle class="person-dot" r="14"/><text text-anchor="middle" y="35">王元化</text></g>
+              <g class="person-node" tabindex="0" role="button" data-person="zhangke" data-relation="academic" aria-label="查看张可关系说明" transform="translate(487 202)"><circle class="person-halo" r="21"/><circle class="person-dot" r="14"/><text text-anchor="middle" y="35">张可</text></g>
+              <g class="person-node" tabindex="0" role="button" data-person="malan" data-relation="life" aria-label="查看马兰关系说明" transform="translate(320 382)"><circle class="person-halo" r="21"/><circle class="person-dot" r="14"/><text text-anchor="middle" y="35">马兰</text></g>
+              <g class="person-center"><circle cx="337" cy="225" r="59" fill="#183D32"/><circle cx="337" cy="225" r="51" fill="none" stroke="#F3EFE5" stroke-opacity=".65"/><text x="337" y="220" text-anchor="middle">余秋雨</text><text x="337" y="241" text-anchor="middle" class="center-sub">作家 · 学者</text></g>
+              <text x="35" y="34" class="graph-note">人物支点与关系按公开文字整理</text><text x="35" y="53" class="graph-note">连线表示资料中的交往，不代表亲疏排序</text>
+              <g class="graph-legend"><circle cx="472" cy="35" r="6" fill="#28584A"/><text x="486" y="39">关系类别</text><circle cx="566" cy="35" r="6" fill="#DB7954"/><text x="580" y="39">人物支点</text></g>
+            </svg>
+            <div class="graph-mobile-tip">点选关系类别或人物支点，在右侧查看依据。</div>
+          </div>
+          <aside class="relation-detail" aria-live="polite">
+            <div class="relation-detail-top"><span class="panel-label">RELATION NOTE</span><span id="relation-count">01 / 04</span></div>
+            <div class="relation-detail-content">
+              <span class="relation-kicker" id="relation-kicker">关系类别</span>
+              <h3 id="relation-name">文学艺术交往</h3>
+              <p id="relation-description">文学与艺术领域的公开交往，是理解作品语境的一条线索。首版不为扩充图谱而补入未经核实的人物姓名。</p>
+              <div class="relation-status"><span class="status-check">✓</span><span id="relation-status">本类人物节点均附公开来源</span></div>
+              <div class="relation-people" id="relation-people"></div>
+              <div class="relation-sources" id="relation-sources"></div>
+              <div class="quote-card"><span class="quote-label">阅读提示 · 编辑文案</span><p id="guide-copy">选择人物支点，查看公开文字中的交往线索与资料出处。</p><span class="quote-disclaimer">关系分类按可查资料整理，不作人物评价。</span></div>
+              <div class="relation-legend"><span><i class="legend-ring"></i>关系类别</span><span><i class="legend-ring selected-ring"></i>当前选择</span></div>
+            </div>
+          </aside>
+        </div>
+        <p class="network-caveat">关系网络为编辑整理视图，节点尺寸表达页面层级，不代表人物的客观地位或关系亲疏。</p>
+      </div>
+    </section>
+
+    <section class="closing-section" aria-label="继续阅读">
+      <div class="closing-inner"><span class="closing-mark">行</span><div><span class="panel-label">KEEP READING</span><h2>从一处地点，<br />再走进一篇作品。</h2></div><a class="button button-light" href="#works">继续探索作品 <span aria-hidden="true">↗</span></a><div class="closing-orbit" aria-hidden="true"></div></div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="about">
+    <div class="footer-main">
+      <div class="footer-brand"><span class="brand-seal light">行</span><div><strong>行者无疆</strong><small>余秋雨 · 文化阅读导览</small></div></div>
+      <div class="footer-summary">沿着人生地图、作品现场与人物关系，<br />找到下一段值得阅读的线索。</div>
+      <div class="footer-links"><span class="panel-label">资料参考</span><a href="https://www.sta.edu.cn/5d/9e/c3457a23966/page.htm" target="_blank" rel="noreferrer">上海戏剧学院 · 人物简介 ↗</a><a href="https://www.chinawriter.com.cn/n1/2019/0320/c405057-30984444.html" target="_blank" rel="noreferrer">中国作家网 · 作品访谈 ↗</a><a href="https://whc.unesco.org/en/list/440/" target="_blank" rel="noreferrer">UNESCO · 莫高窟 ↗</a></div>
+      <div class="footer-links secondary-links"><span class="panel-label">导览说明</span><span>地点路线为公开资料与作品线索示意</span><span>未核实内容已标注，不构成事实结论</span><span>点赞、收藏与留言仅保存在本机浏览器</span></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 行者无疆 · 文化阅读原型</span><span>内容与视觉原型 · 持续校订中</span><a href="#top">回到顶部 ↑</a></div>
+  </footer>
+
+  <div class="modal-backdrop" id="place-modal" hidden>
+    <section class="place-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-describedby="modal-summary">
+      <button class="modal-close" type="button" aria-label="关闭地点档案">×</button>
+      <div class="modal-visual"><span class="modal-index">FIELD NOTE / <b id="modal-index">01</b></span><span class="modal-visual-mark">行<br />者</span><div class="modal-terrain"></div></div>
+      <div class="modal-content">
+        <div class="modal-type"><span id="modal-type">人文遗产</span><span class="status-pill" id="modal-status">关联待复核</span></div>
+        <span class="modal-region" id="modal-region">甘肃 · 敦煌</span>
+        <h2 id="modal-title">莫高窟</h2>
+        <p id="modal-summary" class="modal-summary"></p>
+        <div class="modal-facts"><div><span>作品线索</span><strong id="modal-work"></strong></div><div><span>地点信息</span><strong id="modal-address"></strong></div><div><span>来源说明</span><strong id="modal-source"></strong></div></div>
+        <div class="modal-source-link" id="modal-source-link"></div>
+        <div class="modal-interactions">
+          <div class="interaction-actions"><button type="button" class="interaction-button" id="like-button"><span aria-hidden="true">♡</span><span id="like-label">喜欢</span><b id="like-count">0</b></button><button type="button" class="interaction-button" id="save-button"><span aria-hidden="true">☆</span><span id="save-label">收藏</span></button><span class="local-note">本机保存 · 不与他人共享</span></div>
+          <form class="comment-form" id="comment-form"><label for="comment-input">写下一条阅读感受 <span>限 140 字</span></label><div class="comment-entry"><input id="comment-input" type="text" maxlength="140" placeholder="这处地点让你想起了什么？" autocomplete="off"/><button type="submit">发布</button></div><div class="form-feedback" id="comment-feedback" aria-live="polite">留言保存在此浏览器，不会公开展示。</div></form>
+          <div class="comment-list" id="comment-list" aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
